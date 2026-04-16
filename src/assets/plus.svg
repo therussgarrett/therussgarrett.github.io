@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6b35;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="13" width="6" height="32" rx="3" ry="3"/>
+  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1" y="13" width="32" height="6" rx="3" ry="3"/>
+</svg>

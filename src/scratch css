@@ -1,0 +1,204 @@
+<style>{`
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #000000;
+    color: #e3e5e7;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #4f6071;
+    color: #e3e5e7;
+    padding: 2rem 2rem;
+    text-align: left;
+  }
+
+  header > h1 {
+  line-height: 1.1;
+  }
+
+  header > p {
+  font-size: x-large;
+
+  }
+  nav {
+    background: #252f38;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav button {
+    color: #e3e5e7;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  nav button:hover, nav button.active {
+    background: #6e7276;
+    color: #101112;
+  }
+
+  section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #364652;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow:
+      0 4px 20px rgba(16,17,18,0.6),
+      inset 0 1px 0 rgba(110,114,118,0.1);
+    border: 1px solid #6e7276;
+  }
+  #root {
+  border: none;
+  }
+  #hero {
+    padding: 1rem 2rem;
+    background: #6e7276;
+    color: #101112;
+    text-align: center;
+    border-radius: 0;
+    margin: 0 0 2rem 0;
+    box-shadow: none;
+    font-weight: 500;
+  }
+ #hero > p{
+  font-size: larger;
+ }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: #ffffff;
+    padding: 0rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #101112;
+    border: 1px solid #b8bdc2;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 12px 40px rgba(16,17,18,0.7),
+      0 2px 8px rgba(110,114,118,0.3);
+  }
+
+  footer {
+    background: #101112;
+    color: #b8bdc2;
+    text-align: center;
+    padding: 2.5rem;
+    border-top: 1px solid #4c4f52;
+  }
+
+  h1, h2 { color: #ffffff; }
+  h1 { font-size: 3rem; margin: 0 0 0.5rem 0; font-weight: 600; }
+  h2 { font-size: 2.3rem; margin-bottom: 1.5rem; font-weight: 500; }
+
+  input, textarea {
+    width: 90%;
+    padding: 1rem;
+    margin: 0.75rem 0;
+    border: 1px solid #92979c;
+    border-radius: 8px;
+    background: #2d2f31;
+    color: #e3e5e7;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #b8bdc2;
+    box-shadow: 0 0 0 3px rgba(184,189,194,0.2);
+  }
+
+  button {
+    background: #e69019ff;
+    color: #101112;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+repeating-linear-gradient(45deg, rgb(240, 119, 48), rgb(239 104 49) 2px, rgb(243 147 49) 6px, rgb(243 147 49) 6px)
+
+  }
+
+  button:hover {
+    background: #92979c;
+    transform: translateY(-1px);
+  }
+
+  a {
+    color: #b8bdc2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #e3e5e7;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    nav ul { flex-direction: column; gap: 0.75rem; }
+    section { padding: 2rem 1rem; }
+  }
+
+  #projectCta > a {
+  color: white;
+  font-weight: bold;
+  }
+
+  #projectCta > a:hover {
+  color: black;
+  font-weight: bold;
+  }
+
+#about {
+background-color: white;
+}
+
+`}</style>
+
+
+
+<nav className="bg-slate-900 text-white sticky top-0 z-0">
+        <ul className="flex flex-row justify-center">
+          {['about', 'projects', 'services', 'contact'].map(sec => (
+            <li className="py-4 px-8" key={sec}>
+              <button
+                className={activeSection === sec ? 'active' : 'cursor-pointer'}
+                onClick={() => setActiveSection(sec)}>
+                {sec.charAt(0).toUpperCase() + sec.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
+</nav>

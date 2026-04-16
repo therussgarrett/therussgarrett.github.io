@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#profile {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.btn {
+  border: 1px solid;
+  border-color: white;
+}
+
+#btn {
+  border: 1px solid;
+  border-color: white;
+}
+
+nav button.active {
+	text-decoration: underline 0.15em;
+	text-underline-offset: 0.4em;
+}
+.btn:hover {
+	transform: translateY(-2px);
+}
+
+#hamburger {
+		height: 2em;
+}
+
+#burgerTime {
+	display: block;
+	margin-bottom: 5px;
+	height: 0.5em;
+	color: white;
+	background-color: white;
+	border-radius: 5px;
+	width: 2em;
+}
