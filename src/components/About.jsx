@@ -1,3 +1,5 @@
+import plusImg from '/src/assets/plus.svg'
+
 export default function About({ setActiveSection }) {
   return (
 
@@ -35,20 +37,20 @@ export default function About({ setActiveSection }) {
 
           {/* Bio Content */}
           <div className="text-white text-left not-prose overflow-auto rounded-lg outline outline-white/5 bg-gray-950 p-8" style={{ maxWidth: '800px', margin: 'auto', }}>
-            <h3 className="text-center text-white text-4xl py-6">
+            <h3 className="text-center text-white  font-strong text-5xl pb-8">
               Hi, I'm Russ
             </h3>
             <div className="not-prose overflow-auto rounded-lg outline outline-white/5 bg-zinc-800/50 p-8">
 
 
-            <p className="text-3xl">
-              Many small business websites are slow, outdated, or don’t generate real results.</p><br />
+            <p className="text-2xl text-center">
+              Front-End Developer focused on building modern React applications, responsive interfaces, and polished user experiences.</p><br />
 
-<p className="flex text-xl"><img src="../src/assets/plus.svg" className="pr-3 w-7"/>I design and build websites that are fast, modern, and built to convert.</p><br />
+<p className="flex text-lg"><img src={plusImg} className="pr-3 w-7"/>I specialize in frontend development using React, TypeScript, and modern web technologies with an emphasis on performance, usability, and clean UI design.</p><br />
 
-<p className="flex text-xl"><img src="../src/assets/plus.svg" className="pr-3 w-7"/>My focus is on clean design, strong performance, and creating a user experience that actually turns visitors into customers—without unnecessary complexity.</p>
+<p className="flex text-lg"><img src={plusImg} className="pr-3 w-7"/>I enjoy building fast, intuitive applications that solve real problems and provide seamless user experiences across devices.</p>
 <br />
-<p className="flex text-xl"><img src="../src/assets/plus.svg" className="pr-3 w-7"/>Whether you need a new site or want to improve an existing one, I build solutions that are simple, effective, and built to last.</p>
+
             <br/>
 
 
@@ -76,7 +78,7 @@ export default function About({ setActiveSection }) {
                   justifyContent: 'center'
                 }}
               >
-                View My Projects
+                View Projects
               </a>
             </button>
             <button class="btn" style={{ width: '100%', borderRadius: '6px',
@@ -96,7 +98,7 @@ export default function About({ setActiveSection }) {
                   justifyContent: 'center'
                 }}
               >
-                Hire Me
+                Contact Me
               </a>
               </button>
             </div>
