@@ -4,7 +4,7 @@ import Header from '../src/components/Header'
 import NavBar from '../src/components/NavBar'
 import About from '../src/components/About'
 import Projects from '../src/components/Projects'
-import Services from '../src/components/Services'
+import Stack from '../src/components/Stack'
 import Contact from '../src/components/Contact'
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
           <Projects setActiveSection={setActiveSection} />
         )}
 
-        {activeSection === 'services' && (
-          <Services setActiveSection={setActiveSection} />
+        {activeSection === 'stack' && (
+          <Stack setActiveSection={setActiveSection} />
         )}
 
         {activeSection === 'contact' && (

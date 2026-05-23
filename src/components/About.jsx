@@ -37,7 +37,7 @@ export default function About({ setActiveSection }) {
 
           {/* Bio Content */}
           <div className="text-white text-left not-prose overflow-auto rounded-lg outline outline-white/5 bg-gray-950 p-8" style={{ maxWidth: '800px', margin: 'auto', }}>
-            <h3 className="text-center text-white  font-strong text-5xl pb-8">
+            <h3 className="text-center text-white text-5xl pb-8">
               Hi, I'm Russ
             </h3>
             <div className="not-prose overflow-auto rounded-lg outline outline-white/5 bg-zinc-800/50 p-8">

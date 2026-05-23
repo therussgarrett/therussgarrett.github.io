@@ -22,7 +22,7 @@ const toggleMenu = () => {
       </div>
       <ul className = {`${isOpen ? 'block' : 'hidden'}
         md:flex-row justify-center absolute w-full bg-gray-800 md:relative md:top-0 md:flex md:w-auto`}>
-        {['about', 'projects', 'services', 'contact'].map(sec => (
+        {['about', 'projects', 'stack', 'contact'].map(sec => (
         <li onClick={toggleMenu} className = "py-4 px-8 justify-self-end" key = {sec}>
           <button className = {
           activeSection === sec ? 'active' : 'cursor-pointer'
