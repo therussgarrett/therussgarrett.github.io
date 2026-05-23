@@ -22,11 +22,11 @@ export default function Projects({ setActiveSection }){
               </div>
               <section className="">
                 <div className="font-bold md:text-xl relative bottom-0" id="projectCta" style={{  padding: '10px 0 0 0', marginTop: '15px', display: 'flex', justifyContent: 'center', backgroundImage: 'repeating-linear-gradient(45deg, rgb(240, 119, 48), rgb(239 104 49) 2px, rgb(243 147 49) 6px, rgb(243 147 49) 6px)', borderRadius: '0 0 10px 10px', height: '40px'}}>
-                  <a className="" href="https://accounting-site-nu.vercel.app/" target="_blank">View on Github</a>
+                  <a className="" href="https://github.com/therussgarrett/realtime-task-board" target="_blank">View on Github</a>
                   <p className='px-3'>
                     |
                   </p>
-                  <a className="" href="https://accounting-site-nu.vercel.app/" target="_blank">Live Demo</a>
+                  <a className="" href="https://realtime-task-board-hazel.vercel.app/" target="_blank">Live Demo</a>
                   </div>
                 
                 </section>
