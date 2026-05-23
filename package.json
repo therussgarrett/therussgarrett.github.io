@@ -1,9 +1,9 @@
 {
-  "name": "russell-savage-github-io",
+  "name": "therussgarrett-github-io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Russell-Savage.github.io",
+  "homepage": "https://therussgarrett.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
