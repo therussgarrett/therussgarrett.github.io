@@ -36,14 +36,14 @@ export default function About({ setActiveSection }) {
           </div>
 
           {/* Bio Content */}
-          <div className="text-white text-left not-prose overflow-auto rounded-lg outline outline-white/5 bg-gray-950 p-8" style={{ maxWidth: '800px', margin: 'auto', }}>
-            <h3 className="text-center text-white text-5xl pb-8">
+          <div className="text-white text-left not-prose overflow-auto rounded-lg outline outline-white/5 bg-gray-900 p-1 mx-auto max-w-200" >
+            <h3 className="align-middle justify-center text-center text-white text-5xl py-3">
               Hi, I'm Russ
             </h3>
             <div className="not-prose overflow-auto rounded-lg outline outline-white/5 bg-zinc-800/50 p-8">
 
 
-            <p className="text-2xl text-center">
+            <p className=" text- text-2xl ">
               Front-End Developer focused on building modern React applications, responsive interfaces, and polished user experiences.</p><br />
 
 <p className="flex text-lg"><img src={plusImg} className="pr-3 w-7"/>I specialize in frontend development using React, TypeScript, and modern web technologies with an emphasis on performance, usability, and clean UI design.</p><br />
